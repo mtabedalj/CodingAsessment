@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.mahmoud.socialApp.PublisherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-07T17:09:55" hostname="DESKTOP-UBBP228" time="0.021">
+<testsuite name="org.mahmoud.socialApp.PublisherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-07T17:13:41" hostname="DESKTOP-UBBP228" time="0.027">
   <properties/>
-  <testcase name="userViewsOtherPublishersPosts()" classname="org.mahmoud.socialApp.PublisherTest" time="0.021"/>
-  <system-out><![CDATA[my first post
-my second post
+  <testcase name="userViewsOtherPublishersPosts()" classname="org.mahmoud.socialApp.PublisherTest" time="0.027"/>
+  <system-out><![CDATA[my first post  (2021-03-07T17:13:41.187Z)
+my second post  (2021-03-07T17:13:41.187Z)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -39,9 +39,16 @@ public class Publisher {
             Publisher otherPublisher = appTimeLine.getPublisherUsingName(name);
 
                 for(int i = 0; i<otherPublisher.getPost().size();i++) {
-                    System.out.println(otherPublisher.getPost().get(i));
+                    StringBuilder sb = new StringBuilder();
+                    sb.append(otherPublisher.getPost().get(i));
+                    sb.append("  (");
+                    sb.append(otherPublisher.getDuration().get(i));
+                    sb.append(")");
+                    System.out.println(sb.toString());
                 }
+            }
 
-        }        return true;
+
+               return true;
     }
 }
