@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.mahmoud.socialApp.PublisherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-07T16:49:14" hostname="DESKTOP-UBBP228" time="0.019">
+<testsuite name="org.mahmoud.socialApp.PublisherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-07T16:55:27" hostname="DESKTOP-UBBP228" time="0.019">
   <properties/>
   <testcase name="userViewsPersonalPosts()" classname="org.mahmoud.socialApp.PublisherTest" time="0.019"/>
   <system-out><![CDATA[Bob first post
