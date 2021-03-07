@@ -1,10 +1,13 @@
 package org.mahmoud.socialApp;
 
+import java.time.Instant;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Publisher {
     private String publisherName;
-    private String post;
+    private ArrayList<String> posts = new ArrayList<>();
+
     public void setName(String publisherName) {
 
         this.publisherName = publisherName;
@@ -14,10 +17,9 @@ public class Publisher {
     }
 
     public void writePost(String post) {
-        this.post = post;
-    }
-
-    public String getPost() {
-        return post;
+        posts.add(post);
+     }
+    public ArrayList <String> getPost() {
+        return posts;
     }
 }
