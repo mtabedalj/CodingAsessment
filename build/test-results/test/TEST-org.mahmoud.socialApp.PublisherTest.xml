@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.mahmoud.socialApp.PublisherTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-03-07T16:15:59" hostname="DESKTOP-UBBP228" time="0.043">
+<testsuite name="org.mahmoud.socialApp.PublisherTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-03-07T16:35:02" hostname="DESKTOP-UBBP228" time="0.042">
   <properties/>
-  <testcase name="userPublishOnePost()" classname="org.mahmoud.socialApp.PublisherTest" time="0.025"/>
-  <testcase name="userPublishTwoPosts()" classname="org.mahmoud.socialApp.PublisherTest" time="0.001"/>
-  <testcase name="userPublishPostWithTimeStamp()" classname="org.mahmoud.socialApp.PublisherTest" time="0.015"/>
-  <system-out><![CDATA[2021-03-07T16:15:59.642Z
+  <testcase name="userPublishOnePost()" classname="org.mahmoud.socialApp.PublisherTest" time="0.024"/>
+  <testcase name="userPublishTwoPosts()" classname="org.mahmoud.socialApp.PublisherTest" time="0.002"/>
+  <testcase name="userPublishPostWithTimeStamp()" classname="org.mahmoud.socialApp.PublisherTest" time="0.012"/>
+  <testcase name="addPublishersToTimeLineTest()" classname="org.mahmoud.socialApp.PublisherTest" time="0.002"/>
+  <system-out><![CDATA[2021-03-07T16:35:02.282Z
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -42,6 +42,21 @@ class PublisherTest {
         assertEquals(currentMoment, publisher.getDuration().get(0));
     }
 
+    @Test
+    public void addPublishersToTimeLineTest() {
+        Publisher publisher = new Publisher();
+        AppTimeLine appTimeLine = new AppTimeLine();
+        publisher.setName("Alice");
+        publisher.writePost("my first post", Instant.now());
+        publisher.writePost("my second post", Instant.now());
+        appTimeLine.addPublishersToTimeLine("Alice", publisher);
 
+        Publisher publisher1 = new Publisher();
+        publisher1.setName("Bob");
+        publisher1.writePost("Bob first post", Instant.now());
+        publisher1.writePost("Bob second post", Instant.now());
+        appTimeLine.addPublishersToTimeLine("Bob", publisher1);
+        assertEquals(2, appTimeLine.getWholeTimeLine().size());
+    }
 
 }
