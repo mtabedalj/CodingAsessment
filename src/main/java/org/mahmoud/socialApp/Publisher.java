@@ -30,13 +30,18 @@ public class Publisher {
 
          return timeStamps;
     }
-    public boolean displayPosts(String name) {
+    public boolean displayPosts(String name, AppTimeLine appTimeLine) {
         if(name.equals(currentUser)){
         for(String str: this.getPost()){
             System.out.println(str);
         }}
-        else
-            System.out.println("Not the current user");
-        return true;
+        else {
+            Publisher otherPublisher = appTimeLine.getPublisherUsingName(name);
+
+                for(int i = 0; i<otherPublisher.getPost().size();i++) {
+                    System.out.println(otherPublisher.getPost().get(i));
+                }
+
+        }        return true;
     }
 }

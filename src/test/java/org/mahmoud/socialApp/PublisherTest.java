@@ -74,8 +74,26 @@ class PublisherTest {
         publisher1.writePost("Bob second post", Instant.now());
         appTimeLine.addPublishersToTimeLine("Bob", publisher1);
 
-        assertTrue(publisher1.displayPosts(publisher1.getName()));
+        assertTrue(publisher1.displayPosts(publisher1.getName(),appTimeLine));
 
     }
+    @Test
+    public void userViewsOtherPublishersPosts() {
+        Publisher publisher = new Publisher();
+        AppTimeLine appTimeLine = new AppTimeLine();
 
+        publisher.setName("Alice");
+        publisher.writePost("my first post", Instant.now());
+        publisher.writePost("my second post", Instant.now());
+        appTimeLine.addPublishersToTimeLine("Alice", publisher);
+
+        Publisher publisher1 = new Publisher();
+        publisher1.setName("Bob");
+        publisher1.writePost("Bob first post", Instant.now());
+        publisher1.writePost("Bob second post", Instant.now());
+        appTimeLine.addPublishersToTimeLine("Bob", publisher1);
+
+        assertTrue(publisher1.displayPosts(publisher.getName(), appTimeLine));
+
+    }
 }
