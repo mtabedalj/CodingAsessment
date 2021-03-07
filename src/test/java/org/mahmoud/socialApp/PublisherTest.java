@@ -39,7 +39,7 @@ class PublisherTest {
         Instant currentMoment = Instant.now();
         publisher.writePost("my first post", currentMoment);
         System.out.println(currentMoment);
-        assertEquals(currentMoment, publisher.getDuration().get(0));
+        assertEquals("Less than a minute ago", publisher.getDuration().get(0));
     }
 
     @Test

@@ -26,9 +26,31 @@ public class Publisher {
     public ArrayList <String> getPost() {
         return posts;
     }
-    public ArrayList <Instant> getDuration() {
+    public ArrayList <String> getDuration() {
+        ArrayList <Duration> timeDiff = new ArrayList<>();
+        for(Instant instant: timeStamps) {
+            Duration timeElapsed = Duration.between(instant, Instant.now());
+            timeDiff.add(timeElapsed);
+        }
+        ArrayList <String> durationWithUnit = getDurationWithUnit(timeDiff);
+        return durationWithUnit;
+    }
 
-         return timeStamps;
+    private ArrayList<String> getDurationWithUnit(ArrayList<Duration> timeDiff) {
+        String durationValue = "";
+        ArrayList <String> durationList = new ArrayList<>();
+        for(Duration postTimeDiff: timeDiff){
+            if(postTimeDiff.toMinutes()<=0)
+                durationValue = "Less than a minute ago";
+            else if(postTimeDiff.toHours()<=0)
+                durationValue = postTimeDiff.toMinutes()+" minute ago";
+            else if(postTimeDiff.toDays()<=0)
+                durationValue = postTimeDiff.toHours()+ " hours ago";
+            else
+                durationValue = postTimeDiff.toDays()+ " days ago";
+            durationList.add(durationValue);
+        }
+        return durationList;
     }
     public boolean displayPosts(String name, AppTimeLine appTimeLine) {
         if(name.equals(currentUser)){

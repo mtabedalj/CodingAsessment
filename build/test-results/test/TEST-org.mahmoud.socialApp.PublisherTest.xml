@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.mahmoud.socialApp.PublisherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-07T17:13:41" hostname="DESKTOP-UBBP228" time="0.027">
+<testsuite name="org.mahmoud.socialApp.PublisherTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-03-07T17:22:28" hostname="DESKTOP-UBBP228" time="0.047">
   <properties/>
-  <testcase name="userViewsOtherPublishersPosts()" classname="org.mahmoud.socialApp.PublisherTest" time="0.027"/>
-  <system-out><![CDATA[my first post  (2021-03-07T17:13:41.187Z)
-my second post  (2021-03-07T17:13:41.187Z)
+  <testcase name="userPublishOnePost()" classname="org.mahmoud.socialApp.PublisherTest" time="0.025"/>
+  <testcase name="userViewsOtherPublishersPosts()" classname="org.mahmoud.socialApp.PublisherTest" time="0.006"/>
+  <testcase name="userViewsPersonalPosts()" classname="org.mahmoud.socialApp.PublisherTest" time="0.002"/>
+  <testcase name="userPublishTwoPosts()" classname="org.mahmoud.socialApp.PublisherTest" time="0.0"/>
+  <testcase name="userPublishPostWithTimeStamp()" classname="org.mahmoud.socialApp.PublisherTest" time="0.009"/>
+  <testcase name="addPublishersToTimeLineTest()" classname="org.mahmoud.socialApp.PublisherTest" time="0.001"/>
+  <system-out><![CDATA[my first post  (Less than a minute ago)
+my second post  (Less than a minute ago)
+Bob first post
+Bob second post
+2021-03-07T17:22:28.825Z
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
