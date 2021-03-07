@@ -59,4 +59,17 @@ class PublisherTest {
         assertEquals(2, appTimeLine.getWholeTimeLine().size());
     }
 
+    @Test
+    public void userViewsPersonalPosts() {
+         AppTimeLine appTimeLine = new AppTimeLine();
+         Publisher publisher1 = new Publisher();
+        publisher1.setName("Bob");
+        publisher1.writePost("Bob first post", Instant.now());
+        publisher1.writePost("Bob second post", Instant.now());
+        appTimeLine.addPublishersToTimeLine("Bob", publisher1);
+
+        assertTrue(publisher1.displayPosts());
+
+    }
+
 }

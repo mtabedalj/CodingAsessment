@@ -28,4 +28,10 @@ public class Publisher {
 
          return timeStamps;
     }
+    public boolean displayPosts() {
+        for(String str: this.getPost()){
+            System.out.println(str);
+        }
+        return true;
+    }
 }

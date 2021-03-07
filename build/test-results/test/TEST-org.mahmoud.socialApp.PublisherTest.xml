@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.mahmoud.socialApp.PublisherTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-03-07T16:35:02" hostname="DESKTOP-UBBP228" time="0.042">
+<testsuite name="org.mahmoud.socialApp.PublisherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-07T16:49:14" hostname="DESKTOP-UBBP228" time="0.019">
   <properties/>
-  <testcase name="userPublishOnePost()" classname="org.mahmoud.socialApp.PublisherTest" time="0.024"/>
-  <testcase name="userPublishTwoPosts()" classname="org.mahmoud.socialApp.PublisherTest" time="0.002"/>
-  <testcase name="userPublishPostWithTimeStamp()" classname="org.mahmoud.socialApp.PublisherTest" time="0.012"/>
-  <testcase name="addPublishersToTimeLineTest()" classname="org.mahmoud.socialApp.PublisherTest" time="0.002"/>
-  <system-out><![CDATA[2021-03-07T16:35:02.282Z
+  <testcase name="userViewsPersonalPosts()" classname="org.mahmoud.socialApp.PublisherTest" time="0.019"/>
+  <system-out><![CDATA[Bob first post
+Bob second post
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
